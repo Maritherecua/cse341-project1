@@ -3,7 +3,7 @@ const router = express.Router();
 //Import the contacts controller or database query
 const contactsController = require('../controllers/contacts');
 
-// GET all contacts
+// GET all contacts/root route
 router.get('/', contactsController.getAll);
 
 // GET single contact by ID
