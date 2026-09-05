@@ -14,12 +14,15 @@
   "author": "Maria Arroyo",
   "type": "commonjs",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {   "test": "jest --watchAll --detectOpenHandles"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongodb": "^7.6.0"
+  },
+  "devDependencies": {
+    "jest": "^30.5.1",
+    "supertest": "^7.2.2"
   }
 }
