@@ -9,4 +9,4 @@ https://marroyocse341-project1.onrender.com
 GET {{baseUrl}}
 
 ### Get one contact
-GET {{baseUrl}}/contacts/6a9b975f4a1a63c12728e9a9
+GET {{baseUrl}}/6a9b975f4a1a63c12728e9a9
