@@ -1,0 +1,12 @@
+@baseUrl = http://localhost:3000/contacts
+
+https://marroyocse341-project1.onrender.com
+
+@renderUrl = https://marroyocse341-project1.onrender.com/contacts
+
+
+### Get all contacts
+GET {{baseUrl}}
+
+### Get one contact
+GET {{baseUrl}}/contacts/6a9b975f4a1a63c12728e9a9
