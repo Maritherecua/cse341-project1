@@ -14,9 +14,11 @@
   "author": "Maria Arroyo",
   "type": "commonjs",
   "main": "server.js",
-  "scripts": {   "test": "jest --watchAll --detectOpenHandles"
+  "scripts": {
+    "test": "jest --watchAll --detectOpenHandles"
   },
   "dependencies": {
+    "body-parser": "^2.3.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongodb": "^7.6.0"
