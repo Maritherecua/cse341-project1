@@ -15,12 +15,7 @@ const swaggerSpec = swaggerJsdoc({
       title: 'Contacts API',
       version: '1.0.0',
       description: 'API for managing contacts.'
-    },
-    servers: [
-      {
-        url: `http://localhost:${port}`
-      }
-    ]
+    }
   },
   apis: ['./routes/*.js']
 });
