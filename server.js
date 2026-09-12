@@ -22,7 +22,14 @@ const swaggerSpec = swaggerJsdoc({
 
 //Import and use the router midleware
 app.use(bodyParser.json());
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.get('/swagger.json', (req, res) => {
+  res.json(swaggerSpec);
+});
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(null, {
+  swaggerOptions: {
+    url: '/swagger.json'
+  }
+}));
 const routes = require('./routes');
 app.use('/', routes);
 //Initialize the database and start the server
