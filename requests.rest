@@ -1,4 +1,5 @@
 @baseUrl = http://localhost:3000/contacts
+@contactId = REPLACE_WITH_CONTACT_ID
 
 https://marroyocse341-project1.onrender.com
 
@@ -10,3 +11,30 @@ GET {{baseUrl}}
 
 ### Get one contact
 GET {{baseUrl}}/6a9b975f4a1a63c12728e9a9
+
+### Create a contact
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+	"firstName": "Maria",
+	"lastName": "Tarr",
+	"email": "maria@example.com",
+	"favoriteColor": "green",
+	"birthday": "1995-06-15"
+}
+
+### Update a contact
+PUT {{baseUrl}}/{{contactId}}
+Content-Type: application/json
+
+{
+	"firstName": "Maria",
+	"lastName": "Tarr",
+	"email": "maria.updated@example.com",
+	"favoriteColor": "blue",
+	"birthday": "1995-06-15"
+}
+
+### Delete a contact
+DELETE {{baseUrl}}/{{contactId}}

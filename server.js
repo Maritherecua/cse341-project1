@@ -8,9 +8,9 @@ const mongodb = require('./data/database');
 const port = process.env.PORT || 3000;
 
 //Import and use the router midleware
+app.use(bodyParser.json());
 const routes = require('./routes');
 app.use('/', routes);
-app.use(bodyParser.json());
 //Initialize the database and start the server
 mongodb.initDb((err) => {
   if (err) {
@@ -18,7 +18,7 @@ mongodb.initDb((err) => {
   } else {
     app.listen(port, () => {
       console.log(`Server is listening and running on port ${port}`);
-  
-   });
+
+    });
   }
 });
